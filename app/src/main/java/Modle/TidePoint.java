@@ -1,19 +1,21 @@
 package Modle;
 
+import java.util.Date;
+
 public class TidePoint {
-    private long Time;
+    private String Date;
     private int Heigth;
 
-    public TidePoint(long time, int heigth){
+    public TidePoint(String Date, int heigth){
         this.Heigth= heigth;
-        this.Time =time;
+        this.Date =Date;
     }
-    public long getTime() {
-        return Time;
+    public String getTime() {
+        return Date;
     }
 
     public void setTime(int time) {
-        Time = time;
+        Date = Date;
     }
 
     public int getHeigth() {

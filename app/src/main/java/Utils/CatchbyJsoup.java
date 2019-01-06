@@ -18,17 +18,17 @@ public class CatchbyJsoup {
     }
 
     //获取数据信息 i表示城市序号;
-    public String getData(int i){
-        try {
-            document = document = Jsoup.connect("http://www.chaoxb.com/"+i+"/").get();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Elements e = document.getElementsByTag("script").eq(5);
-        String data[] =e.toString().split(";");
-        String json[] =data[0].split("=");
-        String jsondata = json[1];
-        Log.e(TAG+"{"+i+"}:",jsondata);
+    public String getData(final int i){
+        String jsondata = null;
+                try {
+                    document = document = Jsoup.connect("http://www.chaoxb.com/"+i+"/").get();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Elements e = document.getElementsByTag("script").eq(5);
+                String data[] =e.toString().split(";");
+                String json[] =data[0].split("=");
+                jsondata = json[1];
         return jsondata;
     }
 

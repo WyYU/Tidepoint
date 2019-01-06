@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shandong">
+        <item name="weihai">威海</item>
+        <item name="cxj">成山角</item>
+        <item name="sd">石岛</item>
+        <item name="yt">烟台</item>
+        </string-array>
+</resources>

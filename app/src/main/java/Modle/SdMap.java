@@ -10,7 +10,7 @@ public class SdMap extends HashMap<String,Integer>{
 	public SdMap(){
 		this.put("烟台",38);
 		this.put("威海",39);
-		this.put("成山角",40);
+		this.put("城山角",40);
 		this.put("石岛",41);
 	}
 }

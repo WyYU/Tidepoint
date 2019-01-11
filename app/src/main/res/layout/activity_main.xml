@@ -21,13 +21,20 @@
             android:id="@+id/usejsout_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="使用jsoup爬取" />
+            android:text="@string/catch_jsoup" />
 
         <Button
             android:id="@+id/gsonData"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="解析数据" />
+            android:text="@string/delData" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/draw_btn"
+            android:text="@string/drawPic"
+            />
 
         <com.github.mikephil.charting.charts.LineChart
             android:layout_width="match_parent"
